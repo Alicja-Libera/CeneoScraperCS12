@@ -14,15 +14,15 @@
 
 Compponent | Variable | Selector 
 |--------|----------|--------| 
-|opinion|opinion|<div.opinion>|
-|opinion ID|opinion_id|<div.opinion_id>|
-|opinion’s author|author|<div.author>|
-|author’s recommendation|recommend|<div.recommend>|
-|score expressed in number of stars|stars|<div.stars>|
-|opinion’s content|content|<div.content>|
-|list of product advantages|pros|<div.pros>|
-|list of product disadvantages|cons|<div.cons>|
-|how many users think that opinion was helpful|up_votes||
-|how many users think that opinion was unhelpful|down_votes||
-|publishing date|published||
-|purchase date|purchased||
+|opinion|opinion|div.js_product-review:not(.user-post--highlight)
+|opinion ID|opinion_id|["data-entry-id"]|
+|opinion’s author|author|span.user-post_author-name|
+|author’s recommendation|recommend|sspan.user-post_author-recomendation>em|
+|score expressed in number of stars|stars|span.user-post_score-count|
+|opinion’s content|content|span.user-post_text|
+|list of product advantages|pros|div.review-feature__item--positive|
+|list of product disadvantages|cons|div.review-feature__item--negative|
+|how many users think that opinion was helpful|up_votes|button.vote-yes["data-total-vote"]|
+|how many users think that opinion was unhelpful|down_votes|button.vote-no["data-total-vote"]|
+|publishing date|published|<span.user-post_published > time:nth-child["dtaetime"]|
+|purchase date|purchased|<span.user-post_published > time:nth-child["dtaetime"]|
