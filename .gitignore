@@ -173,5 +173,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-cookies.json
-opinions
+cookie.json
+opinions/
